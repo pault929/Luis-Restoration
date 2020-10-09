@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
     <link rel="stylesheet" href="port.css">   
 
 
@@ -30,7 +31,7 @@
               <a class="nav-link" href="index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Me</a>
@@ -39,51 +40,97 @@
         </div>  
       </nav>
 
-      <div class="port-header">
+      <!-- <div class="port-header">
             <h1>Portfolio page</h1> 
-      </div>
-<section id="gallery">
-       <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/ltcar.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Decorations</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet</p>   
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/ltcar2.JPG" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Decorations</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet</p>   
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/ltcar3.JPG" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Decorations</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet</p>
-                            
-                        </div>
-                    </div>
-                </div>
+      </div> -->
 
-                
-                </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <img src="images/car.jpg">
             </div>
-       </div>
-    </section>
+              <div class="details">
+                <h5>Car waxing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quo. </p>
+              </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="imgBx">
+              <img src="images/ltcar.jpg">
+                </div>
+                <div class="details">
+                  <h5>Headlights</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit!</p>
+                </div>
+          </div>
+        
+        
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <img src="images/ltcar.jpg">
+                </div>
+                <div class="details">
+                  <h5>Headlights</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit!</p>
+                </div>
+          </div>
+        
+        
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <img src="images/ltcar.jpg">
+                </div>
+                <div class="details">
+                  <h5>Headlights</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit!</p>
+                </div>
+          </div>
+        
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/ltcar.jpg">
+              </div>
+              <div class="details">
+                <h5>Headlights</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit!</p>
+              </div>
+        </div>
+
+      <div class="swiper-slide">
+        <div class="imgBx">
+          <img src="images/ltcar2.jpg">
+            </div>
+            <div class="details">
+              <h5>Detailing</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit!</p>
+              </div>
+            </div>
+          </div>
+      <div class="swiper-pagination"></div>
+  </div>
 
 
-
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 500,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
         
 </body>
 </html>
